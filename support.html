@@ -125,20 +125,33 @@
 </head>
 <body>
 
+    
+
 <div class="container">
     <h1>Contact Us</h1>
-    <form action="action="https://formspree.io/f/mkgvadaz" method="POST">
-        <label for="name">Your Name</label>
+<form
+  action="https://formspree.io/f/mkgvadaz"
+  method="POST"
+>
+    <label for="name">Your Name</label>
         <input type="text" id="name" name="Name" placeholder="Enter your name" required>
 
-        <label for="email">Your Email</label>
-        <input type="email" id="email" name="Email" placeholder="Enter your email" required>
+    <label>
+    Your email:
+    <input type="email" name="email" class="email">
+  </label>
+    
+  <label  class="message">
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+    
+  <!-- your other form fields go here -->
+  <button type="submit" class="submit-button" >Send</button>
+</form>
+    
+        
 
-        <label for="message">Message</label>
-        <textarea id="message" name="Message" placeholder="Type your message here" required></textarea>
-
-        <button type="submit" class="submit-button">Send</button>
-    </form>
 </div>
 
 </body>
